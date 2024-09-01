@@ -1,0 +1,66 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #33333300;
+    position: relative;
+  }
+  
+  .navbar-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navbar-links li a:hover {
+    color: #ddd;
+  }
+  
+  /* Botão de toggle (hambúrguer) */
+  .navbar-toggle {
+    display: none; /* Esconder o botão por padrão */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Media Query para dispositivos móveis */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none; /* Esconder o menu por padrão em telas menores */
+      flex-direction: column;
+      gap: 0.5rem;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 1rem 0;
+    }
+  
+    .navbar-links.active {
+      display: flex; /* Exibir o menu quando ativo */
+    }
+  
+    .navbar-toggle {
+      display: block; /* Mostrar o botão de toggle em telas menores */
+    }
+  }
+  

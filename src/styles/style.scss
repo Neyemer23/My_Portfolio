@@ -1,0 +1,68 @@
+:root {
+    background-color: var(--main-gray);
+    --main-gray: #181818;
+    --yellow-golden: #FFC107;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cta-button-first {
+    background-color: var(--yellow-golden);
+    padding: 20px;
+    font-weight: 1000;
+
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    color: white;
+
+    .banner-cta {
+        //background-color: green;
+        margin-top: 40%;
+        padding-bottom: 200px;
+
+        .banner-text {
+            //background-color: red;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+
+            h1 {
+                color: var(--yellow-golden);
+                font-size: 48pt;
+                line-height: 67px;
+                margin-bottom: 25px;
+            }
+
+            h4 {
+                font-size: 20pt;
+                font-style: thin;
+                font-weight: 220;
+                margin-top: 25px;
+            }
+
+            hr {
+                background-color: rgb(12, 12, 12);
+                width: 30%;
+            }
+        }
+
+        .banner-cta-button {
+            //background-color: red;
+            width: 90%;
+            margin: auto;
+            margin-top: -5px;
+
+            .button-area {
+                //background-color: green;
+                width: 44.4%;
+                margin: auto;
+            }
+        }
+    }
+
+    .about-me {
+        background-color: red;
+    }
+}
