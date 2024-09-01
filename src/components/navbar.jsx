@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="/">Logo</a>
+        <a href="/">Rui Silva</a>
       </div>
       <button className="navbar-toggle" onClick={handleToggleMenu}>
         ☰ {/* Este é o ícone de "hambúrguer" */}
